@@ -1,7 +1,7 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import nl.bertriksikken.StreamTableParser;
 import nl.bertriksikken.geojson.FeatureCollection;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
