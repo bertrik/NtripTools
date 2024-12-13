@@ -1,7 +1,7 @@
 plugins {
-    alias libs.plugins.versions
     alias libs.plugins.dependencycheck
     alias libs.plugins.errorprone
+    alias libs.plugins.versions
 }
 
 def isNonStable = { String version ->
@@ -15,8 +15,8 @@ dependencyCheck {
 }
 
 subprojects {
-    apply plugin: "java"
     apply plugin: 'com.github.ben-manes.versions'
+    apply plugin: "java"
     apply plugin: 'net.ltgt.errorprone'
 
     java {
